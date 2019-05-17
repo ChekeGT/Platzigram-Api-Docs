@@ -12,11 +12,11 @@ This endpoint allows you to login to platzigram api using Json Web Tokens.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-form-data-parameters %}
-{% api-method-parameter name="username" type="string" required=false %}
+{% api-method-parameter name="username" type="string" required=true %}
 Username to login
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password" type="string" required=false %}
+{% api-method-parameter name="password" type="string" required=true %}
 Password to login
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}

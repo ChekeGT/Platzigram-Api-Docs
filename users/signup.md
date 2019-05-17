@@ -105,3 +105,9 @@ The data you give is wrong, here are listed some of the most common errors.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
+An email will be sent to the user giving a code to verify that is the owner of that email account.
+{% endhint %}
+
+{% page-ref page="verify.md" %}
+

@@ -1,6 +1,6 @@
 # Refresh Access Token
 
-{% api-method method="get" host="" path="/users/refresh-token/" %}
+{% api-method method="post" host="" path="/users/refresh-token/" %}
 {% api-method-summary %}
 Refresh  Access token
 {% endapi-method-summary %}
@@ -12,7 +12,7 @@ This endpoint allows you to get a new access token using your refresh token.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-form-data-parameters %}
-{% api-method-parameter name="refresh" type="string" required=false %}
+{% api-method-parameter name="refresh" type="string" required=true %}
 Refresh JWT
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
@@ -33,13 +33,16 @@ The new access token was given to you.
 
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
-Refresh token is missing.
+There are errors with the given data. They could be:
 {% endapi-method-response-example-description %}
 
 ```javascript
 {
     "refresh": [
         "This field is required."
+    ]
+    "non_field_errors": [
+        "User is already verified."
     ]
 }
 ```
