@@ -1,6 +1,6 @@
 # Signup
 
-{% api-method method="post" host="https://api.cakes.com" path="" %}
+{% api-method method="post" host="/users/signup/" path="" %}
 {% api-method-summary %}
 Create User
 {% endapi-method-summary %}
