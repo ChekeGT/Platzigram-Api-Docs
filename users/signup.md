@@ -1,6 +1,6 @@
 # Signup
 
-{% api-method method="post" host="/users/signup/" path="" %}
+{% api-method method="post" host="" path="/users/signup/" %}
 {% api-method-summary %}
 Create User
 {% endapi-method-summary %}
@@ -104,6 +104,4 @@ The data you give is wrong, here are listed some of the most common errors.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
