@@ -33,9 +33,7 @@ User email.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="username" type="string" required=true %}
-User nickname.UI  
-  
-U{
+User nickname.
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
 {% endapi-method-request %}
